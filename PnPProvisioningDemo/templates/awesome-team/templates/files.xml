@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:Files
+  xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema ..\..\..\schemas\ProvisioningSchema-2019-03-custom.xsd">
+  <pnp:File Src="YN.docx" Folder="Shared Documents" Overwrite="true" TargetFileName="AwesomeFile.docx" ></pnp:File>
+</pnp:Files>

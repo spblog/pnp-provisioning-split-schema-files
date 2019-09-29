@@ -1,0 +1,38 @@
+﻿<pnp:ListInstance
+  xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema ..\..\..\..\schemas\ProvisioningSchema-2019-03-custom.xsd"
+  Title="awesome-calendar" 
+  TemplateType="100" 
+  Url="Lists/awesomecalendar">
+  <pnp:ContentTypeBindings>
+    <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+    <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+  </pnp:ContentTypeBindings>
+  <pnp:Views>
+    <View Name="{76FD565D-00BA-494C-9C33-05FF0C7B5713}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="/sites/pnp-template/Lists/awesomecalendar/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=44">
+      <Query>
+        <OrderBy>
+          <FieldRef Name="ID" />
+        </OrderBy>
+      </Query>
+      <ViewFields>
+        <FieldRef Name="LinkTitle" />
+        <FieldRef Name="EventDate" />
+      </ViewFields>
+      <RowLimit Paged="TRUE">30</RowLimit>
+      <JSLink>clienttemplates.js</JSLink>
+    </View>
+  </pnp:Views>
+  <pnp:Fields>
+    <Field DisplayName="EventDate" Format="DateOnly" Title="EventDate" Type="DateTime" ID="{92548355-6c08-409f-9c23-36f2a24c7467}" SourceID="{{listid:awesome-calendar}}" StaticName="EventDate" Name="EventDate" ColName="datetime1" RowOrdinal="0" />
+  </pnp:Fields>
+  <pnp:FieldRefs>
+    <pnp:FieldRef ID="3a6b296c-3f50-445c-a13f-9c679ea9dda3" Name="ComplianceAssetId" DisplayName="Compliance Asset Id" />
+    <pnp:FieldRef ID="ccc1037f-f65e-434a-868e-8c98af31fe29" Name="_ComplianceFlags" DisplayName="Label setting" />
+    <pnp:FieldRef ID="d4b6480a-4bed-4094-9a52-30181ea38f1d" Name="_ComplianceTag" DisplayName="Labels" />
+    <pnp:FieldRef ID="92be610e-ddbb-49f4-b3b1-5c2bc768df8f" Name="_ComplianceTagWrittenTime" DisplayName="Label Applied" />
+    <pnp:FieldRef ID="418d7676-2d6f-42cf-a16a-e43d2971252a" Name="_ComplianceTagUserId" DisplayName="Label applied by" />
+    <pnp:FieldRef ID="8382d247-72a9-44b1-9794-7b177edc89f3" Name="_IsRecord" DisplayName="Item is a Record" />
+  </pnp:FieldRefs>
+</pnp:ListInstance>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:ClientSidePages
+  xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema ..\..\..\schemas\ProvisioningSchema-2019-03-custom.xsd">
+
+  <pnp:ClientSidePage PageName="SamplePage" PromoteAsNewsArticle="true" Overwrite="true" Publish="true" Layout="Article" EnableComments="true">
+    <pnp:Sections>
+      <pnp:Section Order="1" Type="OneColumn">
+        <pnp:Controls>
+          <pnp:CanvasControl
+            WebPartType="Image"
+            CustomWebPartName="Awesome Images"
+            JsonControlData="{}"
+            ControlId="0eaba53f-55d8-44b5-9f7c-61301c7f1e0e"
+            Order="1">
+          </pnp:CanvasControl>
+        </pnp:Controls>
+      </pnp:Section>
+    </pnp:Sections>
+  </pnp:ClientSidePage>
+
+</pnp:ClientSidePages>

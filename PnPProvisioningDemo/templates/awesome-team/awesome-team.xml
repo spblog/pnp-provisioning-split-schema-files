@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema ..\..\schemas\ProvisioningSchema-2019-03.xsd" >
+
+  <pnp:Preferences Generator="Manual"></pnp:Preferences>
+
+  <pnp:Templates ID="CommonTemplates">
+
+    <pnp:ProvisioningTemplate ID="AwesomeTeamTemplate">
+
+      <pnp:Lists>
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="templates/lists/awesome-news.xml" />
+        <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="templates/lists/awesome-calendar.xml" />
+      </pnp:Lists>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="templates/fields.xml" />
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="templates/client-pages.xml" />
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="templates/files.xml" />
+
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+
+</pnp:Provisioning>

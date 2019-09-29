@@ -1,0 +1,19 @@
+﻿<pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/03/ProvisioningSchema ..\..\..\schemas\ProvisioningSchema-2019-03-custom.xsd">
+
+  <Field Type="Choice" DisplayName="MyAwesomeChoice" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" Group="Custom Columns" ID="{986f411a-4426-497f-a31b-5a14aa65bc8e}" SourceID="{a4ee8dfc-0f6e-4ce8-9964-ac3cfc225296}" StaticName="MyAwesomeChoice" Name="MyAwesomeChoice">
+    <Default>One</Default>
+    <CHOICES>
+      <CHOICE>One</CHOICE>
+      <CHOICE>Two</CHOICE>
+      <CHOICE>Three</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <Field ID="{746BB255-B0F7-47D5-9A3E-1C8E52468420}" Name="Authors" StaticName="Authors" DisplayName="Authors" Type="UserMulti" Mult="TRUE" List="UserInfo" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" AllowDeletion="FALSE" />
+
+  <Field Type="Text" DisplayName="MyAwesomeText" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" Group="Custom Columns" ID="{8e2ddb71-0ea4-4dc9-9933-dc69adbe2c5a}" SourceID="{a4ee8dfc-0f6e-4ce8-9964-ac3cfc225296}" StaticName="MyAwesomeText" Name="MyAwesomeText">
+  </Field>
+
+</pnp:SiteFields>
